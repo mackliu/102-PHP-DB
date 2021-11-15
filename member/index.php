@@ -27,6 +27,12 @@
 </head>
 <body>
     <nav>
+        <?php
+
+        if(isset($_GET['err'])){
+            echo "帳號或密碼錯誤，請重新登入";
+        }
+        ?>
         <a href="reg.php"><button>註冊新會員</button></a>
         <a href="login.php"><button>點我登入</button></a>
     </nav>
