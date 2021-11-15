@@ -21,7 +21,7 @@
         </tr>
         <tr>
             <td>密碼：</td>
-            <td><input type="text" name="password" id=""></td>
+            <td><input type="password" name="password" id=""></td>
         </tr>
         <tr>
             <td>電子郵件：</td>
