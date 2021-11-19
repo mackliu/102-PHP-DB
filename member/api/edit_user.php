@@ -19,6 +19,6 @@ $pdo->exec($sql_account);
 $pdo->exec($sql_member);
 
 
-header("location:../dashboard.php?user={$_GET['user']}");
+header("location:../dashboard.php");
 
 ?>

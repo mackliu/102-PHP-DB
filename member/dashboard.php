@@ -1,3 +1,7 @@
+<?php
+session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,11 +18,11 @@
 <div class="content">
 <h3>會員中心</h3>
 
- <?=$_GET['user'];?>歡迎你:<br>
+ <?=$_SESSION['user'];?>歡迎你:<br>
 <?php
 $dsn="mysql:host=localhost;charset=utf8;dbname=member";
 $pdo=new PDO($dsn,'root','');
-$sql="SELECT * FROM `account`,`member` WHERE `account`.`id`=`member`.`id` && `account`.`account`='{$_GET['user']}'";
+$sql="SELECT * FROM `account`,`member` WHERE `account`.`id`=`member`.`id` && `account`.`account`='{$_SESSION['user']}'";
 $user=$pdo->query($sql)->fetch();
 
 ?>

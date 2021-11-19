@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 /* $account=$_POST['account'];
 $password=$_POST['password']; */
 $sql="SELECT count(*) FROM `account` WHERE `account`='{$_POST['account']}' && `password`='{$_POST['password']}'";
@@ -16,6 +16,8 @@ $result=$pdo->query($sql)->fetchColumn();
 
 //
 if($result>0){
+
+    $_SESSION['user']=$_POST['account'];
     header("location:../dashboard.php?user=".$_POST['account']);
     //header("location:../dashboard.php");
 }else{
