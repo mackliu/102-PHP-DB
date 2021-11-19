@@ -1,4 +1,6 @@
-<?php session_start();?>
+<?php session_start();
+$_SESSION['alert']=1;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -1,5 +1,11 @@
 <?php
 session_start();
+
+if(!(isset($_SESSION['user']) && isset($_SESSION['alert']))){
+    header("location:../index.php");
+    exit();
+}
+
 $dsn="mysql:host=localhost;charset=utf8;dbname=member";
 $pdo=new PDO($dsn,'root','');
 
