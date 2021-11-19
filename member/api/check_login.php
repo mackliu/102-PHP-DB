@@ -16,7 +16,8 @@ $result=$pdo->query($sql)->fetchColumn();
 
 //
 if($result>0){
-    header("location:../dashboard.php");
+    header("location:../dashboard.php?user=".$_POST['account']);
+    //header("location:../dashboard.php");
 }else{
     header('location:../index.php?err=1');
 }

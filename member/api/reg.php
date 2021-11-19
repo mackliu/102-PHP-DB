@@ -1,7 +1,7 @@
 <?php
 
 $account=$_POST['account'];
-$password=md5($_POST['password']);
+$password=$_POST['password'];
 $mail=$_POST['mail'];
 
 $name=$_POST['name'];

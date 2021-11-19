@@ -12,7 +12,19 @@
  <?php include "./include/nav.php";?>
  <?php include "./include/side_bar.php";?>
 <div class="content">
-會員中心
+<h3>會員中心</h3>
+<?php
+
+
+?>
+ XXXX歡迎你:
+
+個人資料:
+帳號:
+地址:
+電話:
+mail:
+生日:
 
 </div>
 
