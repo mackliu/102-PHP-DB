@@ -16,7 +16,7 @@ if(isset($_SESSION['user'])){
         <a href="chang_pw.php">修改密碼</a>
         <a href="edit_user.php">編輯會員資料</a>
         <a href="logout.php">登出</a>
-        <a class="del" href="./api/del_user.php">刪除帳號</a>
+        <a class="del" href="./del_alert.php">刪除帳號</a>
 
 </nav>
 <?php  }else{  ?>
