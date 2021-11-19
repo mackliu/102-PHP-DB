@@ -7,6 +7,7 @@ if(isset($_SESSION['user'])){
         <a href="dashboard.php">會員中心</a>
         <a href="chang_pw.php">修改密碼</a>
         <a href="edit_user.php">編輯會員資料</a>
+        <a href="logout.php">登出</a>
 </nav>
 <?php  }else{  ?>
 <nav>
