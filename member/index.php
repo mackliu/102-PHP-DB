@@ -45,8 +45,8 @@ session_start();
         <?php
         }else{   
        ?>
-        <a href="reg.php"><button>註冊新會員</button></a>
-        <a href="login.php"><button>點我登入</button></a>
+        <a href="content.php?action=reg"><button>註冊新會員</button></a>
+        <a href="content.php?action=login"><button>點我登入</button></a>
         <?php
         }
         ?>

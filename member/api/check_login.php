@@ -18,7 +18,7 @@ $result=$pdo->query($sql)->fetchColumn();
 if($result>0){
 
     $_SESSION['user']=$_POST['account'];
-    header("location:../dashboard.php?user=".$_POST['account']);
+    header("location:../content.php?action=dashboard");
     //header("location:../dashboard.php");
 }else{
     header('location:../index.php?err=1');
