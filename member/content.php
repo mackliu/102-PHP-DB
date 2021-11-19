@@ -16,15 +16,17 @@ session_start();
  <?php include "./include/nav.php";?>
  
  <?php 
- if($_GET['action']!='login'){
+ if(isset($_GET['action'])  && $_GET['action']!='login'){
 
      include "./include/side_bar.php";
  }
  ?>
 <div class="content">
     <?php
-    
-    switch($_GET['action']){
+        $action=(isset($_GET['action']))?$_GET['action']:'login';
+        include "./frontend/".$action.".php";
+
+/*     switch($_GET['action']){
         case "login":
             include "./frontend/login.php";
         break;
@@ -38,7 +40,7 @@ session_start();
             include "./frontend/reg.php";
         break;
         
-    }
+    } */
 
     
 
