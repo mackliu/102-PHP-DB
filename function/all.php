@@ -11,7 +11,7 @@ foreach($rows as $row){
     echo $row['item']."-".$row['place']."<br>";
 }
 
-
+//取出指定資料表的所有資料
 function all($table){
     $dsn="mysql:host=localhost;charset=utf8;dbname=students";
     $pdo=new PDO($dsn,'root','');
